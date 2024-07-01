@@ -1,0 +1,12 @@
+.card {
+  background-color: #fff3e6;
+}
+
+.customStyle {
+  color: red;
+  border: 3px solid red;
+  padding: 1px;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+

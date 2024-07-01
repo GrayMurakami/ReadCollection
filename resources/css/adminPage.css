@@ -1,0 +1,19 @@
+/* リフレッシュボタン　*/
+.refreshCust:hover {
+  text-decoration: none;
+}
+
+.with-shadow {
+  text-shadow: 2px 2px 4px #0056b3;
+  /* 水平シフト、垂直シフト、ブラー、カラー */
+}
+
+.custBtn:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+}
+
+.custUserBtn:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1);
+}

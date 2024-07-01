@@ -1,0 +1,210 @@
+/* 基本スタイル */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('http://localhost:8000/storage/images/backG6.1.jpg');
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -15%;
+  overflow-x: hidden;
+}
+
+body {
+  flex: 1;
+}
+
+/* ヘッダーのスタイル */
+header {
+  height: 80px; /* ヘッダーの高さ */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 要素を他のコンテンツより高くする */
+}
+
+header img {
+  height: 85px; /* 高さ SVG */
+  width: auto; /* 比率を保持して自動的に幅を調整するスケーリング */
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.9)); /* 影：水平オフセット、垂直オフセット、ぼかし、色 */
+  border: 5px solid #000;
+  outline: 1px solid #fff;
+}
+
+header a {
+  height: 100%; /* リンクの高さ */
+  display: flex;
+  align-items: center;
+}
+
+.text-with-shadow {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  /* 水平シフト、垂直シフト、ブラー、カラー */
+}
+
+.header-buttons {
+  margin-right: -100px !important;
+  padding-right: -100px !important;
+}
+
+.btnUser:disabled, .btnUser:disabled:hover {
+  background-color: blue; 
+  border-color: rgb(3, 3, 103); 
+  color: white; 
+  cursor: default; 
+  opacity: 1; 
+}
+
+.btnBold {
+  font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(0, 123, 255, 0.4); /* ホバー時の背景色 */
+  color: #007bff; /* 文字の色は視認性のためで、ここでは青 */
+  font-weight: bold;
+}
+
+
+/* ロゴとテキストのエフェクト */
+.logoScaleRotate:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1) rotateZ(2deg);
+}
+
+.siteNameScale:hover {
+  transform: scale(1.1);
+}
+
+/* コンテンツスタイル */
+.content {
+  flex: 1;
+}
+
+/* 書籍コンテンツスタイル */
+.book-cover-wrapper {
+  margin: 20px 0 0 100px;
+  border: 2px solid #fff;
+  padding: 5px;
+}
+
+.book-cover-wrapper:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1);
+}
+
+.book-cover {
+  max-width: 200px; /* 画像の最大幅 */
+  height: auto;
+}
+
+.book-details {
+  padding-left: 20px; /* テキストの左インデント */
+  margin-top: 30px;
+}
+
+.book-title {
+  margin: 20px 0 20px 20px;
+  color: #fff;
+  font-size: 20px;
+  background-color: black;
+  border: 2px solid lightskyblue; /* ブルーフレーム */
+  padding: 10px; /* 内部のくぼみ */
+  display: inline-block; /* フレームが幅いっぱいに伸びないように */
+}
+
+.book-title:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1) rotateZ(1deg);
+}
+
+.book-author,
+.book-genre,
+.book-publication-date,
+.book-description {
+  margin: 20px 0 20px 25px; /* 要素間のインデント */
+  color: #fff;
+  font-size: 20px;
+}
+
+.textDesign {
+  text-align: center; /* ヘッダーを中央に配置する */
+}
+
+/* テキストスタイル */
+.textDesignHome {
+  color: #fff;
+  padding-top: 125px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+.textDesignSearch {
+  color: #fff;
+  padding-top: 100px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+.textDesign {
+  color: #fff;
+  padding-top: 125px;
+  margin-left: 250px;
+}
+
+/* フッター */
+.footerLogo:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+}
+
+.footerLine {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  margin: 0 40px 8px;
+}
+
+.footer-dark {
+  background-color: #000;
+  color: white;
+}
+
+.custom-link {
+  color: #fff; /* リンクの色 */
+  text-decoration: none; /* アンダーラインの削除 */
+  font-weight: bold;
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+}
+
+.custom-link:hover {
+ color:#fff;
+  text-decoration: none; /* ホバー時にアンダースコアを削除 */
+  transform: scale(1.2); /* ポインティングのズームイン */
+}
+
+
+/* アイコンとリンク */
+.linkIcon {
+  filter: invert(1) grayscale(100%) brightness(1000%);
+  display: inline-block;
+  position: relative;
+  right: -70px;
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+}
+
+.linkIcon:hover {
+  transform: scale(1.2);
+}
+
+/* その他のスタイル */
+
+.vertical-line {
+  width: 3px;
+  height: 24px;
+  background-color: white;
+}

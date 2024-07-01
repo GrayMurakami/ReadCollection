@@ -1,0 +1,177 @@
+/* 基本スタイル */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('http://localhost:8000/storage/images/backG6.1.jpg');
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -15%;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+
+/* ヘッダーのスタイル */
+header {
+  height: 80px; /* ヘッダーの高さ */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 要素を他のコンテンツより高くする */
+}
+
+header img {
+  height: 85px; /* 高さ SVG */
+  width: auto; /* 比率を保持して自動的に幅を調整するスケーリング */
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.9)); /* 影：水平オフセット、垂直オフセット、ぼかし、色 */
+  border: 5px solid #000;
+  outline: 1px solid #fff;
+}
+
+header a {
+  height: 100%; /* リンクの高さ */
+  display: flex;
+  align-items: center;
+}
+
+/* ロゴとテキストのエフェクト */
+.logoScaleRotate:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1) rotateZ(2deg);
+}
+
+.siteNameScale:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1);
+}
+
+/* テキストスタイル */
+.textDesign {
+  color: #fff;
+  padding-top: 125px;
+  margin-left: 250px;
+}
+
+.textDescript {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 50px;
+  margin-left: 250px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(250, 248, 248, 0.5);
+}
+
+/* コンテンツスタイル */
+.content {
+  flex: 1;
+}
+
+/* アイコンとリンク */
+.linkIcon {
+  filter: invert(1) grayscale(100%) brightness(1000%);
+  display: inline-block;
+  position: relative;
+  right: -70px;
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+}
+
+.linkIcon:hover {
+  transform: scale(1.2);
+}
+
+.custom-link {
+  color: #007bff; /* リンクのメインカラー */
+  text-decoration: none; /* アンダースコアを削除 */
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+}
+
+.custom-link:hover {
+  color: #0056b3; /* ホバーリング時の色 */
+  text-decoration: underline; /* カーソルを合わせると下線が表示 */
+  transform: scale(1.1);
+}
+
+.custom-link:active {
+  color: #003865; /* 押したときの色 */
+}
+
+.custom-link:focus {
+  outline: none; /* フォーカスストロークの削除 */
+}
+
+/* ボタン */
+.btn-custom {
+  padding: 0.65rem 1.1rem; /* インデントの増加 */
+  font-size: 1.25rem; /* フォントサイズの拡大 */
+  font-weight: bold;
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+}
+
+.btn-custom:hover {
+  transform: scale(1.2);
+}
+
+/* モーダルウィンドウ */
+.modal {
+  overflow-y: auto; /* モーダルウィンドウの垂直スクロールを有効にする */
+}
+
+/* フッター */
+.footerLogo:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+}
+
+.footerLine {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  margin: 0 40px 8px;
+}
+
+.footer-dark {
+  background-color: #000;
+  color: white;
+}
+
+/* その他のスタイル */
+.actionDescript {
+  margin-top: 35px;
+}
+
+.modalMainText {
+  font-weight: bolder;
+}
+
+.customStyle {
+  color: red;
+  border: 3px solid red;
+  padding: 1px;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+.custom-label {
+  margin-left: 0.6em; /* テキストの左インデントを追加 */
+  cursor: pointer; /* テキストがクリックできることを確認 */
+  color: rgb(91, 6, 6);
+}
+
+.custom-bg {
+  background-color: lightgray;
+  color: #000;
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(220, 53, 69, 0.8); /* ボタンより少し明るくない色に変更する */
+  color: white;
+}
+
+.dropStyle {
+  background-color: lightgray;
+}

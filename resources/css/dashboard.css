@@ -1,0 +1,87 @@
+/* ヘッダーのスタイル */
+header {
+  height: 80px; /* ヘッダーの高さ */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 要素を他のコンテンツより高くする */
+}
+
+header img {
+  height: 85px; /* 高さ SVG */
+  width: auto; /* 比率を保持して自動的に幅を調整するスケーリング */
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.9)); /* 影：水平オフセット、垂直オフセット、ぼかし、色 */
+  border: 5px solid #000;
+  outline: 1px solid #fff;
+}
+
+header a {
+  height: 100%; /* リンクの高さ */
+  display: flex;
+  align-items: center;
+}
+
+/* ロゴとテキストのエフェクト */
+.logoScaleRotate:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.1) rotateZ(2deg);
+}
+
+.siteNameScale:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+/* コンテンツスタイル */
+.container-fluid {
+  padding-top: 100px;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* フッター */
+.footerLogo:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+}
+
+.customLink:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+.footerLine {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  margin: 0 40px 8px;
+}
+
+.footer-dark {
+  background-color: #000;
+  color: white;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+/* アイコンとリンク */
+.linkIcon {
+  filter: invert(1) grayscale(100%) brightness(1000%);
+  display: inline-block;
+  margin-right: -50px;
+}
+
+.linkIcon:hover {
+  transition: transform 0.3s ease; /* 変更時のアニメーションの追加 */
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
